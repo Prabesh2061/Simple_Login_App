@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="default_web_client_id" translatable="false">YOUR_FIREBASE_WEB_CLIENT_ID</string>
+    <string name="facebook_app_id">YOUR_FACEBOOK_APP_ID</string>
+    <string name="facebook_client_token">YOUR_FACEBOOK_CLIENT_TOKEN</string>
+    <string name="hint_video_title">Enter video title</string>
+    <string name="start_recording">Start Recording</string>
+    <string name="stop_save">Stop &amp; Save</string>
+    <string name="back">Back</string>
+</resources>

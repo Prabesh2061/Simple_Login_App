@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#ECEFF1">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Information"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- First Name Label -->
+    <TextView
+        android:id="@+id/labelFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        app:layout_constraintTop_toBottomOf="@id/pageTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- First Name Input -->
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Enter First Name"
+        android:background="@android:drawable/edit_text"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/labelFirstName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Family Name Label -->
+    <TextView
+        android:id="@+id/labelFamilyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Family Name"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        app:layout_constraintTop_toBottomOf="@id/firstName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Family Name Input -->
+    <EditText
+        android:id="@+id/familyName"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="Enter Family Name"
+        android:background="@android:drawable/edit_text"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/labelFamilyName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Age Label -->
+    <TextView
+        android:id="@+id/labelAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        app:layout_constraintTop_toBottomOf="@id/familyName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Age Spinner -->
+    <Spinner
+        android:id="@+id/ageSpinner"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintTop_toBottomOf="@id/labelAge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- City Label -->
+    <TextView
+        android:id="@+id/labelCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        app:layout_constraintTop_toBottomOf="@id/ageSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- City Spinner -->
+    <Spinner
+        android:id="@+id/citySpinner"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintTop_toBottomOf="@id/labelCity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Country Label -->
+    <TextView
+        android:id="@+id/labelCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        app:layout_constraintTop_toBottomOf="@id/citySpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Country Spinner -->
+    <Spinner
+        android:id="@+id/countrySpinner"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintTop_toBottomOf="@id/labelCountry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:backgroundTint="#1976D2"
+        android:textColor="#FFFFFF"
+        android:paddingVertical="12dp"
+        app:layout_constraintTop_toBottomOf="@id/countrySpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Bottom Buttons: Back and Next side by side -->
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:backgroundTint="#9E9E9E"
+        android:textColor="#FFFFFF"
+        android:paddingVertical="12dp"
+        app:layout_constraintTop_toBottomOf="@id/submitBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/nextBtn"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.45"
+        />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:paddingVertical="12dp"
+        app:layout_constraintTop_toBottomOf="@id/submitBtn"
+        app:layout_constraintStart_toEndOf="@id/backBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent="0.45"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
